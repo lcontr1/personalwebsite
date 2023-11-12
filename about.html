@@ -3,14 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="personalwebsite.css" />
     <script src="personalwebsite.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="canvas">
-      <div class="interests">
-        <h4>Interests</h4>
+    <header>
+      <!--style the list so that there is no dot and the words are in one row at the end-->
+      <a href="index.html" id="name">LUCON PROGRAMMING</a>
+      <ul>
+        <li>
+          <a href="index.html"><strong>RELAX</strong></a>
+        </li>
+        <li>
+          <a href="about.html"><strong>LEARN</strong></a>
+        </li>
+        <li>
+          <a href="portfolio.html"><strong>EXPERIENCE</strong></a>
+        </li>
+      </ul>
+    </header>
+    <!--I'm gonna insert an image to be the background of this section and hopefully with the transparent footer and header it will encompass the page.
+  or I gotta make this <div class="main"> a grid to encompass the entire page but centered so that when I z-index the header and footer it will be on top of this section-->
+
+    <div id="hiddenContent" class="grid-container">
+      <div id="content1" class="main1">
+        <!--<img class="slides" src="https://volcano.si.edu/gallery/photos/GVP-05525.jpg" alt="Pico de Orizaba Volcano"> -->
+        <h1>INTERESTS</h1>
+        <h3>My Interests</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -26,10 +52,21 @@
           voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
           sint occaecat cupidatat non proident, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div class="GoodAt">
-        <h4>What am I Good At?</h4>
+
+      <div id="content2" class="main2">
+        <!-- <img class="slides" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/75/bc/52.jpg" alt="a colorful street in Puebla, Mexico">-->
+        <h1>ENTICE EMPLOYER HERE</h1>
+        <h3>Enticing Since 1994</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -37,35 +74,39 @@
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. <br />Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div class="entice">
-        <h4>Entice Employer Here</h4>
-        <p>
+          culpa qui officia deserunt mollit anim id est laborum.
+          <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+          <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. <br />Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
     </div>
+
+    
+    <footer>
+      <div>
+        <ul>
+          <li>
+            <a href="#content1"><strong>INTERESTS</strong></a>
+          </li>
+          <li>
+            <a href="#content2"><strong>ENTICE</strong></a>
+          </li>
+        </ul>
+      </div>
+      <p><strong>LUCON PROGRAMMING</strong></p>
+    </footer>
   </body>
 </html>
