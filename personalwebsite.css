@@ -1,83 +1,89 @@
 * {
-  padding: 0%;
-  margin: 0%;
   box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+  color: white;
 }
 
-/*html { 
-  background: url(https://volcano.si.edu/gallery/photos/GVP-05525.jpg) no-repeat center center fixed; 
+/* i want the photo to be included in the slideshow, which goes in the .main but I also want it to encompass the entire page
+if i put it in the html, could i set the slideshow in there?
+if i put it in the main should I set it to the entire page?
+*/
+html {
+  background: url(https://volcano.si.edu/gallery/photos/GVP-05525.jpg) no-repeat
+    center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-}*/
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 10fr 1fr;
-  gap: 0.5rem;
-  min-height: 100vh;
 }
-
-.mainbox {
-  display: grid;
-}
-
 body {
-  font-family: "Abel", "Times New Roman", Times, serif;
-}
-.box1 {
-  grid-column: 1 / 4;
-  opacity: 90%;
-  color: black;
-}
-.lists {
-  display: flex;
-  justify-content: flex-end;
-
-  list-style-type: none;
-  position: absolute;
-  right: 2%;
-  top: 2%;
+  margin: 0;
+  font-family: "Abel", sans-serif;
 }
 
-h4 {
-  position: absolute;
-  left: 2%;
-  top: 2%;
+header {
+  display: inline-flex;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 5%;
+  color: grey;
+  width: 100vw;
+  text-align: right;
 }
-h2 {
-  padding-top: 10vh;
-  text-align: center;
-  
-}
-a {
-  color: black;
-  opacity: 90%;
-}
-
 #name {
-  color: black;
-  opacity: 75%;
+  text-align: left;
+  font-size: 30px;
 }
-
-.box4 {
-  color: black;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  height: 10%;
-  text-align: center;
+ul {
+  list-style-type: none;
+  width: 100%;
 }
-
 li {
   display: inline-block;
-  list-style-type: none;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: justify;
+  margin-right: 5%;
+  font-size: 20px;
 }
 
-.slides {
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 5%;
+  gap: 5%;
+}
+.main1 {
+  background-size: cover;
+  text-align: center;
+}
+.main2 {
+  text-align: center;
+}
+.main3 {
+  text-align: center;
+}
+.main4 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: darkolivegreen;
+  font-size: large;
+}
+
+.grid-container > div,
+.hiddenContent > [name="content4"] {
   display: none;
+}
+
+.grid-container > div:target {
+  display: block;
+}
+
+.inter {
+  margin-bottom: 100vh;
+}
+
+footer {
+  text-align: center;
 }

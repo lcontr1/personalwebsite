@@ -3,14 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="personalwebsite.css" />
     <script src="personalwebsite.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="canvas">
-      <div class="project1">
-        <h4>Project 1</h4>
+    <header>
+      <a href="index.html" id="name">LUCON PROGRAMMING</a>
+      <ul>
+        <li>
+          <a href="index.html"><strong>RELAX</strong></a>
+        </li>
+        <li>
+          <a href="about.html"><strong>LEARN</strong></a>
+        </li>
+        <li>
+          <a href="portfolio.html"><strong>EXPERIENCE</strong></a>
+        </li>
+      </ul>
+    </header>
+    <!--I'm gonna insert an image to be the background of this section and hopefully with the transparent footer and header it will encompass the page.
+  or I gotta make this <div class="main"> a grid to encompass the entire page but centered so that when I z-index the header and footer it will be on top of this section-->
+
+    <div id="hiddenContent" class="grid-container">
+      <div id="content1" class="main1">
+        <h1>PROJECT 1</h1>
+
         <p>
           Brief description goes here about my project and how amazing it was
           and how quick and efficiant I was to make it.
@@ -19,36 +43,66 @@
         <img src="screenshot" alt="project1 screenshot" />
         <a href="linktomywebsite.org">project1.org</a>
       </div>
-      <div class="project2">
-        <h4>Project 2</h4>
+
+      <div id="content2" class="main2">
+        <h1>PROJECT 2</h1>
+
         <p>
           Brief description goes here about my project and how amazing it was
           and how quick and efficiant I was to make it.
         </p>
         <!--note to self - make sure to fill in with an actual screenshot-->
-        <img src="screenshot" alt="project2 screenshot" />
-        <a href="linktomywebsite.org">project2.org</a>
+        <img src="screenshot" alt="project1 screenshot" />
+        <a href="linktomywebsite.org">project1.org</a>
       </div>
-      <div class="project3">
-        <h4>Project 3</h4>
+
+      <div id="content3" class="main3">
+        <h1>PROJECT 3</h1>
+
         <p>
           Brief description goes here about my project and how amazing it was
           and how quick and efficiant I was to make it.
         </p>
         <!--note to self - make sure to fill in with an actual screenshot-->
-        <img src="screenshot" alt="project3 screenshot" />
-        <a href="linktomywebsite.org">project3.org</a>
+        <img src="screenshot" alt="project1 screenshot" />
+        <a href="linktomywebsite.org">project1.org</a>
       </div>
-      <div class="project4">
-        <h4>Project 4</h4>
+
+      <div id="content4" class="main4">
+        <h1>PROJECT 4</h1>
+
         <p>
           Brief description goes here about my project and how amazing it was
           and how quick and efficiant I was to make it.
         </p>
         <!--note to self - make sure to fill in with an actual screenshot-->
-        <img src="screenshot" alt="project4 screenshot" />
-        <a href="linktomywebsite.org">project4.org</a>
+        <img src="screenshot" alt="project1 screenshot" />
+        <a href="linktomywebsite.org">project1.org</a>
       </div>
     </div>
+
+    <footer>
+      <div>
+        <ul>
+          <li>
+            <a href="#content1"><strong>PROJECT1</strong></a>
+          </li>
+          <li>
+            <a href="#content2"><strong>PROJECT2</strong></a>
+          </li>
+          <li>
+            <a href="#content3"><strong>PROJECT3</strong></a>
+          </li>
+          <li>
+            <a href="#content4"><strong>PROJECT4</strong></a>
+          </li>
+        </ul>
+      </div>
+      <p><strong>LUCON PROGRAMMING</strong></p>
+    </footer>
   </body>
 </html>
+
+<!--note to self - make sure to fill in with an actual screenshot-->
+<img src="screenshot" alt="project1 screenshot" />
+<a href="linktomywebsite.org">project1.org</a>
