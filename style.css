@@ -22,12 +22,12 @@ body {
 
 header {
   display: inline-flex;
-  overflow: hidden;
   background-color: transparent;
   padding: 5%;
   color: grey;
   width: 100vw;
   text-align: right;
+  height: 15px;
 }
 #name {
   text-align: left;
@@ -86,4 +86,35 @@ a:hover {
 
 footer {
   text-align: center;
+}
+
+form {
+  text-align: center;
+}
+label{
+  font-size: 30px;
+}
+
+button {
+  margin-bottom: 50px;
+  margin-top: 20px;
+  background-color: darkolivegreen;
+  font-size: 30px;
+  
+}
+button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+textarea {
+ color: darkolivegreen;
+ font-size: 20px;
+}
+.box {
+  width: 330px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: darkolivegreen;
 }
