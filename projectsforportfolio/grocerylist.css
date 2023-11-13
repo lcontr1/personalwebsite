@@ -1,0 +1,51 @@
+h1 {
+  color: darkolivegreen;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  background-color: burlywood;
+  border-style: double;
+  border-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 500px;
+    margin-left: 85px
+;
+}
+
+h3 {
+    display: block;
+}
+@counter-style plate {
+  system: cyclic;
+  symbols: "\1F37D";
+  suffix: " ";
+}
+
+ul {
+  list-style: plate;
+}
+
+img {
+  height: 150px;
+  margin: 20px 10px;
+  padding: 2em;
+  text-align: center;
+  border-style: solid;
+}
+
+.groceries {
+    display: inline-flex;
+}
+
+div {
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+  background-color: brown;
+  margin-left: 20px;
+  margin-right: 50px;
+  padding: 3em 5em;
+}

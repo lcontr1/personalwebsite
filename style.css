@@ -9,8 +9,8 @@ if i put it in the html, could i set the slideshow in there?
 if i put it in the main should I set it to the entire page?
 */
 html {
-  background: url(https://volcano.si.edu/gallery/photos/GVP-05525.jpg) no-repeat
-    center center fixed;
+  background: url(https://w0.peakpx.com/wallpaper/359/361/HD-wallpaper-dark-water-black-waves-night-mono.jpg)
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -48,7 +48,6 @@ li {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   padding: 5%;
-  gap: 5%;
 }
 .main1 {
   background-size: cover;
@@ -63,14 +62,25 @@ li {
 .main4 {
   text-align: center;
 }
+img {
+  border-radius: 8px;
+  /*to center the image (include width:50%) I'm just not using it here because I want my image to automatically adjust to fit the size of the screen*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*to scale down image but never to be larger than original size use the following*/
+  max-width: 100%;
+  height: auto;
+}
 a {
+  /*removes the underline to my links*/
   text-decoration: none;
 }
 a:hover {
   color: darkolivegreen;
   font-size: large;
 }
-
+/*the following 3 are to hide <div> until I click on the link to call it*/
 .grid-container > div,
 .hiddenContent > [name="content4"] {
   display: none;
@@ -80,18 +90,28 @@ a:hover {
   display: block;
 }
 
-.inter {
+/*.inter {
   margin-bottom: 100vh;
+}
+*/
+
+.bottomnav {
+  text-align: center;
+  margin-bottom: 15%;
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  font-size: 10px;
 }
 
 form {
   text-align: center;
 }
-label{
+label {
   font-size: 30px;
 }
 
@@ -100,17 +120,17 @@ button {
   margin-top: 20px;
   background-color: darkolivegreen;
   font-size: 30px;
-  
 }
 button:hover {
   background-color: black;
   color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 textarea {
- color: darkolivegreen;
- font-size: 20px;
+  color: darkolivegreen;
+  font-size: 20px;
 }
 .box {
   width: 330px;
