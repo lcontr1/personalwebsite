@@ -24,7 +24,6 @@ header {
   display: inline-flex;
   background-color: transparent;
   padding: 5%;
-  color: grey;
   width: 100vw;
   text-align: right;
   height: 15px;
@@ -77,7 +76,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: darkolivegreen;
+  color: darkolivegreen !important;
   font-size: large;
 }
 /*the following 3 are to hide <div> until I click on the link to call it*/
@@ -95,6 +94,10 @@ a:hover {
 }
 */
 
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .bottomnav {
   text-align: center;
   margin-bottom: 15%;
